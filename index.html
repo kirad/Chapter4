@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Second Web App</title>
-	<link href="style.css" rel="stylesheet" type="text/css"> 
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 </head>
-<body>
-
-<script src="app.js"></script>
-</body>
+	<body>
+		<header>
+			<div class="container">
+				<div class="application-name">
+					<h1>Comments</h1>
+				</div>
+				<div class="description">
+					<h2>This is a simple application, using which you can write comments</h2>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<section class="comment-input">
+					<p>Enter you comment:</p>
+					<input type="text"><button>+</button>
+				</section>
+				<section class="comments">
+					<p class="comment">You are not a billionaire.</p>
+					<p class="comment">You are not a millionaire.</p>
+					<p class="comment">Money that you have, your mom gives you.</p>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<h6>Application hosted on the public domain</h6>
+			</div>
+		</footer>
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="app.js"></script>
+	</body>
 </html>
