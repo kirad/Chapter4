@@ -5,8 +5,24 @@ var main = function () {
 		$new_comment = $("<p>");
 		if (comment_text !== "") {
 			$new_comment.text(comment_text);
+			$new_comment.hide();
 			$(".comments").append($new_comment);
+			$new_comment.fadeIn();
 			$(".comment-input input").val("");
+		}
+	});
+
+	$(".comment-input input").on("keypress", function (event) {
+		var comment_text = $(".comment-input input").val(),
+		$new_comment = $("<p>");
+		if (event.keyCode === 13) {
+			if (comment_text !== "") {
+			$new_comment.text(comment_text);
+			$new_comment.hide();
+			$(".comments").append($new_comment);
+			$new_comment.fadeIn();
+			$(".comment-input input").val("");
+			}
 		}
 	});
 };
