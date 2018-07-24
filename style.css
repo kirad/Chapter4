@@ -55,11 +55,12 @@ main .container .comments {
 	width: 60%;
 }
 
-main .container .comments .comment {
+main .container .comments p {
 	margin: 5px;
 	padding: 20px;
+	border-radius: 8px;
 }
-main .container .comments .comment:nth-child(odd) {
+main .container .comments p:nth-child(odd) {
 	background-color: #efefef;
 }
 
